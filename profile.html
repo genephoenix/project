@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title> Profile Form </title>
+  <link rel = "stylesheet" href = "public/stylesheets/style.css">
+</head>
+
+<body>
+  <h2> Profile Form </h2>
+  <form action = "/profile/edit" method = "POST">
+    <div>
+      <label for = "email"> E-mail: </label>
+      <input type = "text" name = "email" id = "email" value = "" placeholder = "Enter email address" /> <br/>
+    </div>
+    <div>
+      <label for = "password"> Password: </label>
+      <input type = "password" name = "password" id = "password" value = "" placeholder = "Enter password" /> <br/>
+    </div>
+    <div>
+      <label for="gender" class = "genderchoices"> Gender: </label>
+      <div class = "selectbox">
+        <select name="gender">
+          <option value=""> </option>
+          <option value="Female"> Female </option>
+          <option value="Male"> Male </option>
+          <option value="Decline to State"> Decline to State </option>
+        </select>
+      </div> 
+    </div>  
+    <div>
+      <label for = "firstname"> First Name: </label>
+      <input type = "text" name = "firstname" id = "firstname" value = "" placeholder = "Enter first name" /> <br/>
+    </div>
+    <div>
+      <label for = "lastname"> Last Name: </label>
+      <input type = "text" name = "lastname" id = "lastname" value ="" placeholder = "Enter last name" /> <br/>
+    </div>
+    <div>
+      <input type = "submit" value = "Submit Information" class = "profilebutton">
+    </div>
+  </form>
+</body>
+</html>
